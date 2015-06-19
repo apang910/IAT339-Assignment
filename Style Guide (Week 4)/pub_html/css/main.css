@@ -1,0 +1,532 @@
+/*
+
+  STYLE GUIDE STYLING  
+  
+*/
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	color: #999;
+	display: block;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	text-decoration: none;
+	color: #999;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #999;
+	
+}
+
+section {
+	margin: 0;
+	padding: 0 0;
+}
+
+section code {
+	background-color: #ddd;
+	padding: 0.5em 0.75em;
+	display: block;
+	margin: 0 1em;
+	color: #26C6DA;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	padding: 1em 0 1em 1em;
+	margin: 0;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+h4 {
+	color: #999;
+	padding: 0 0 0 1em;
+}
+
+/* Lato Font */
+
+@font-face {
+	font-family: Bold;
+	src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: Medium;
+	src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: Regular;
+	src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: Light;
+	src: url(../font/Roboto-Light.ttf);
+}
+
+/* End of Lato Font Face */
+
+/* ---------------- GRIDS ------------------- */
+
+[class^='col-'] {
+	float: left;
+	padding: 0;
+}
+
+.col-5of10 {
+	width: 50%;
+}
+
+.col-2-5of10 {
+	width: 25%;
+}
+
+
+/* ---------------- NAVIGATION ------------------- */
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+	z-index: 1;
+	padding-left: 5em;
+}
+
+nav a {
+	display: inline-block;
+	padding: 2em 0;
+	margin-right: 5em;
+	transition: all 0.5s ease;
+}
+
+nav a:hover {
+	color: #26C6DA;
+}
+
+/* ---------------- COMPANY ------------------- */
+
+.company-info {
+	width: 100%;
+	text-align: center;
+	padding: 12em 0em 7em 0em;
+	background-color: #26C6DA;
+	color: #fff;
+}
+
+.sub{
+	font-size: 1.5em;
+	color: #FFF100;
+}
+
+.brand-info {
+	margin-top: 1em;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.25em;
+}
+
+.member1, .member2 {
+	font-size: 1em;
+	color: 	#999;
+	text-align: center;
+	margin: 7em 0;
+}
+
+.member-name {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: #000;
+}
+
+.team-info:after {
+	content:"";
+	display: block;
+	clear: both;
+	border-bottom: 10px solid #999;
+}
+
+/* ---------------- INTERACTIVE ELEMENTS ------------------- */
+
+#interactive {
+	background-color: #26C6DA;
+	padding: 0 5em 8em 5em;
+}
+
+#interactive h2 {
+	background-color: #999; 
+}
+
+#interactive:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#interactive p {
+	padding: 0 0 0 1em;
+	color: #999;
+}
+
+.interactive-element1 {
+	background-color: #fff;
+	border-bottom: 10px solid #26C6DA;
+	border-right: 10px solid #26C6DA;
+	padding-bottom: 3em;
+}
+
+.interactive-element2 {
+	background-color: #fff;
+	border-bottom: 10px solid #26C6DA;
+	border-right: 10px solid #26C6DA;
+	padding-bottom: 3em;
+}
+
+.interactive-element3 {
+	background-color: #fff;
+	border-right: 10px solid #26C6DA;
+	padding-bottom: 3em;
+	border-bottom: 10px solid #26C6DA;
+}
+
+.interactive-element4 {
+	background-color: #fff;
+	border-right: 10px solid #26C6DA;
+	padding-bottom: 3em;
+}
+
+/*-----------------------------------------*/
+
+.text-link:link {
+	text-decoration: none;
+	color: #999;
+	transition: all 0.5s ease;
+}
+
+.text-link:hover {
+	color: #26C6DA;
+}
+
+/*-----------------------------------------*/
+
+.button-nav {
+	margin-left: 1em;
+	transition: all 0.3s ease;
+	padding: 1em;
+}
+
+.button-nav:hover {
+	color: #26C6DA;
+	border-bottom: 5px solid #26C6DA;
+}
+
+/*-----------------------------------------*/
+
+.button-style {
+	font-family: Regular;
+	border: 0.2em solid #26C6DA;
+	text-decoration: none;
+	padding: 0.5em 2em;
+	margin-left: 2em;
+	
+	/*interaction set-up*/
+	background: -webkit-linear-gradient(transparent, transparent 50%, #26C6DA 50%, #26C6DA);
+	background: linear-gradient(transparent, transparent 50%, #26C6DA 50%, #26C6DA);
+	background-size: 100% 200%;
+  	transition: all 0.2s ease;
+}
+
+.button-style:link, .button-style:visited {
+	color: #999;
+}
+
+.button-style:hover {
+	background-position: 100% 100%;
+	color: #fff;
+}
+
+.button-style:focus {
+	outline: none;
+}
+
+/*-----------------------------------------*/
+
+.form-label {
+	font-family: Regular;
+	padding: 0.5em 1em;
+	background-color: #999;
+	float: left;
+	transition: all 0.5s ease;
+	color: #fff;
+	margin-left: 2em;
+	font-size: 1em;
+	border: 0.2em solid #999;
+}
+
+.form-input {
+	font-family: Regular;
+	background-color: #fff;
+	padding: 0.5em 1em;
+	padding-right: 5em;
+	border: 0.2em solid #999;
+	color: #26C6DA;
+	transition: all 0.5s ease;
+	font-size: 1em;
+}
+
+.form-input:focus {
+	outline: none;
+	border: 0.2em solid #26C6DA;
+}
+
+.form-input:focus ~ .form-label {
+	background-color: #26C6DA;
+	border: 0.2em solid #26C6DA;
+	color: #FFF;
+}
+
+/* ---------------- TEXT STYLING ------------------- */
+
+#textstyle:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#textstyle h2 {
+	background-color: #999;
+}
+
+#textstyle h4 {
+	padding: 1em 2em 0 2em;
+}
+
+#textstyle code {
+	margin: 0 2em;
+}
+
+#textstyle p {
+	padding: 0 2em 0 2em;
+}
+
+.text-element1, .text-element2, .text-element3, .text-element4 {
+	background-color: #fff;
+	padding-bottom: 5em;
+}
+
+/*-----------------------------------------*/
+
+p.title {
+	font-family: Bold;
+	font-size: 2em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+p.subtitle {
+	font-family: Bold;
+	font-size: 1.5;
+	color: #FFF100;
+	text-transform: uppercase;
+}
+
+.title-subtitle-wrap {
+	background-color: #26C6DA;
+	padding: 1em 0;
+	margin: 0 2em;
+}
+
+p.heading {
+	font-family: Medium;
+	font-size: 1em;
+	color: #26C6DA;
+	text-transform: uppercase;
+}
+
+/*-----------------------------------------*/
+
+.text {
+	font-family: Regular;
+	color: #999;
+}
+
+/*-----------------------------------------*/
+
+ul.bullet-style{
+	list-style: circle;
+}
+
+ul.bullet-style > li {
+	color: #26C6DA;
+	margin-bottom: 1em;
+}
+
+ul.bullet-style > li > span {
+	font-family: Regular;
+	color: #999;
+}
+
+/*-----------------------------------------*/
+
+ol.numbered-style > li {
+	color: #26C6DA;
+	margin-bottom: 1em;
+}
+
+ol.numbered-style > li > span {
+	font-family: Regular;
+	color: #999;
+}
+
+/* ---------------- COMBINED ELEMENTS ------------------- */
+
+#combined {
+	border-top: 10px solid #999;
+}
+
+#combined p {
+	margin: 0 2em;
+}
+
+#combined h4 {
+	margin: 2em 1em;
+}
+
+#combined h2 {
+	background-color: #26C6DA;
+	text-align: center;
+	margin-bottom: 3em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.combined-element {
+	padding-bottom: 5em;
+}
+
+.nav-grid {
+	margin-left: 5em;
+	margin-bottom: 5em;
+}
+
+.nav-grid a {
+	font-family: Medium;
+	margin-right: 8em;
+}
+
+/*-----------------------------------------*/
+
+/* ---------------- MEDIA QUERIES ------------------- */
+
+@media (max-width: 80rem) {
+	.col-2-5of10 {
+		width: 50%;
+		padding-bottom: 2em;
+	}
+	
+	.text-element4 {
+		margin-top: -38em;
+	}
+}
+
+@media (max-width: 70rem) {
+	.form-label {
+		font-size: 0.75em;
+	}
+	
+	.form-input {
+		font-size: 0.75em;
+	}
+	
+	.button-style {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 55rem) {
+	.col-5of10 {
+		float:none;
+		width: 100%;
+	}
+	
+	nav a {
+		margin-right: 2em;
+	}
+	
+	.col-2-5of10 {
+		width: 100%;
+		float: none;
+	}
+		
+	.text-element4 {
+		margin-top: 0;
+	}
+	
+	.nav-grid a{
+		margin-right: 3em;
+	}
+}
+
+@media (max-width: 45rem) {
+	nav a {
+		margin-right: 0;
+		padding: 1em 0;
+		display: block;
+		text-align: center;
+	}
+	
+	nav {
+		padding: 1em 0 2em 0;
+	}
+	
+	.company-info {
+		padding: 20em 0 7em 0;
+	}
+}
+
+@media (max-width: 40rem) {
+	#interactive {
+		padding: 0 1em 5em 1em;
+	}
+	
+	.interactive-element1, .interactive-element2, .interactive-element3, .interactive-element4 {
+		border: none;
+	}
+	
+	.col-3of10 {
+		width: 100%;
+	}
+	
+	.button-nav {
+		display: block;
+		padding: 0.2em;
+	}
+	
+	.button-nav:hover {
+		border: none;
+	}
+}
