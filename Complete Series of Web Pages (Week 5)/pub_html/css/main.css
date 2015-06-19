@@ -13,6 +13,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 p {
@@ -57,18 +58,189 @@ a:visited {
 
 /* ---------------- GRIDS ------------------- */
 
+.col-1of12 {
+	width: 8.3333%;
+}
 
+.col-2of12 {
+	width: 16.666%;
+}
+
+.col-3of12 {
+	width: 25%;
+}
+
+.col-4of12 {
+	width: 33.3333%;
+}
+
+.col-5of12 {
+	width: 41.666%;
+}
+
+.col-6of12 {
+	width: 50%;
+}
+
+.col-12of12 {
+	width: 100%;
+}
+
+[class^='col-'] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
 
 /* ---------------- NAVIGATION ------------------- */
 
 .main-nav {
 	display: inline-block;
 	position: fixed;
+	top: 0;
+	z-index: 2;
 	padding: 2em 0 2em 0;
 	width: 100%;
+	background-color: #fff;
+}
+
+.main-nav:after {
+	content:"";
+	display: block;
+	clear: both;
 }
 
 .main-nav a {
 	font-family: Medium;
-	padding: 0 2em;
+}
+
+.main-nav a:hover {
+	color: #26C6DA;
+}
+
+.main-nav a.current-page {
+	color: #26C6DA;
+}
+
+/* ---------------- HERO ------------------- */
+
+.hero {
+	margin-top: 5em;
+	background-color: #ddd;
+	height: 30em;
+}
+
+h1.home-title {
+	font-size: 2em;
+	font-family: Bold;
+	color: #26C6DA;
+	padding-top: 5em
+}
+
+h2.home-sub {
+	font-size: 1em;
+	font-family: Light;
+	color: #000;
+}
+
+.hero .col-5of12 {
+	position: relative;
+	left: 45%;
+}
+
+/* ---------------- MOODBOARD ------------------- */
+
+.mood-board {
+	margin: 0.5em 0 0.5em 0;
+	height: 30.5em;
+}
+
+.product {
+	height: 15em;
+	border: 1px solid #000;
+	margin: 0 0.5em 0.5em 0;
+}
+
+.product-endright {
+	height: 15em;
+	border: 1px solid #000;
+	margin: 0 -0.1em 0.5em 0;
+}
+
+.product-endleft{
+	height: 15em;
+	border: 1px solid #000;
+	margin: 0 0.5em 0.5em -0.1em;
+}
+
+/* ---------------- SUBSCRIBE ------------------- */
+
+.subscribe {
+	display: block;
+	padding: 7em 0 10em 0;
+	background-color: #ddd;
+}
+
+.subscribe:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.subscribe p.header {
+	font-family: Regular;
+	font-size: 1.5em;
+	color: #26C6DA;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-left: -2em;
+}
+
+.email-input {
+	font-family: Regular;
+	background-color: #fff;
+	border: 0.2em solid #999;
+	color: #26C6DA;
+	transition: all 0.5s ease;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 5em;
+	padding: 0.5em 0 0.5em 0.5em;
+	width: 20em;
+}
+
+.email-input:focus {
+	outline: none;
+	border: 0.2em solid #26C6DA;
+}
+
+
+.button-signup {
+	font-family: Regular;
+	border: 0.2em solid #26C6DA;
+	text-decoration: none;
+	padding: 0.5em 0;
+	margin-left: 5em;
+	color: #999;
+	width: 20em;
+	font-size: 1em;
+	
+	/*interaction set-up*/
+	background: -webkit-linear-gradient(transparent, transparent 50%, #26C6DA 50%, #26C6DA);
+	background: linear-gradient(transparent, transparent 50%, #26C6DA 50%, #26C6DA);
+	background-size: 100% 200%;
+  	transition: all 0.2s ease;
+}
+
+.button-signup:link, .button-signup:visited {
+	color: #999;
+}
+
+.button-signup:hover {
+	background-position: 100% 100%;
+	color: #fff;
+}
+
+.button-signup:focus {
+	outline: none;
 }
