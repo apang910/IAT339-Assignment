@@ -1,0 +1,55 @@
+SmartGit
+
+NEW FILE/CHANGES -> STAGE -> COMMIT
+
+
+(1) -> repository -> clone -> paste repo URL (remote)
+
+(2) -> folder on dekstop -> .git (required, dont edit) -> create index.html in folder (not in .git)
+
+(3) -> file starts "untracked" -> "stage" file (stage icon / ctrl T)
+
+	> If repository folder location was moved, SmartGit would not know where it is (<missing>)
+	> click "add/create" to find folder in new location
+
+(4) -> click "commit" -> "commit Message:" provide understanding of changes -> hit "Commit"
+
+	> for weird files (.DS_Store) > right click and ignore > ignore as pattern
+
+(5) -> make 3 commits to the index.html file
+
+(6) -> once all commits are dont, click "push" -> "Current branch "master"" (push current branch)
+	
+	> other option > upload every single branch and replace on repository
+	> after push > under "Local Branches" > "origin (1)"
+
+(7) -> Open "Log" -> History of process (What you have done) -> Use this to revert to previous changes
+
+	> to revert > select the desired commit (Top is most recent) -> select "Revert"
+
+
+
+CREATE NEW BRANCH (Parallel world)
+
+(8) -> Right click "Local Branch" -> New Branch -> create "dev" branch -> add and checkout
+
+	> have master branch, development branch, and multiple other ones (navigation, etc)
+
+(9) -> in index.html -> add <nav> tag with 1 <a> -> save file
+
+(10) -> stage index.html -> commit
+
+(11) -> create img folder to repository folder -> put random image in
+
+(12) -> in SmartGit -> stage commit image
+
+(13) -> checkout master (double click master branch) -> notice how html changes between branch versions, as well as the existing image
+
+	> once changes from dev is done, merg dev into master branch
+	> make sure to checkout master branch first > right click dev branch > merge...
+	> "Merge to Working Tree"
+	> select changes > commit
+
+(14) -> create another branch -> "FixingNavigationError" branch
+
+(15) 	
