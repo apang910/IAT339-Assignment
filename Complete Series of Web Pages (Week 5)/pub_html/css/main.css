@@ -1,0 +1,74 @@
+/*
+
+  STYLE GUIDE STYLING  
+  
+*/
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	text-decoration: none;
+	color: #999;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #999;
+	
+}
+
+/* Roboto Font */
+
+@font-face {
+	font-family: Bold;
+	src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: Medium;
+	src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: Regular;
+	src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: Light;
+	src: url(../font/Roboto-Light.ttf);
+}
+
+/* End of Roboto Font Face */
+
+/* ---------------- GRIDS ------------------- */
+
+
+
+/* ---------------- NAVIGATION ------------------- */
+
+.main-nav {
+	display: inline-block;
+	position: fixed;
+	padding: 2em 0 2em 0;
+	width: 100%;
+}
+
+.main-nav a {
+	font-family: Medium;
+	padding: 0 2em;
+}
