@@ -193,7 +193,7 @@ h2.home-sub {
 	color: #26C6DA;
 	text-align: center;
 	margin-bottom: 1em;
-	margin-left: -2em;
+	margin-left: 3.5em;
 }
 
 .email-input {
@@ -243,4 +243,76 @@ h2.home-sub {
 
 .button-signup:focus {
 	outline: none;
+}
+
+/* ---------------- MEDIA QUERIES ------------------- */
+
+@media (max-width: 65rem) {
+	.mood-board {
+		height: 61.5em;
+	}
+
+	.mood-board .col-4of12 {
+		width: 60%;
+	}
+	
+	.mood-board .col-2of12 {
+		width: 40%;
+	}
+	
+	.mood-board .col-3of12 {
+		width: 50%;
+	}
+	
+	.mood-board .col-6of12 {
+		width: 60%;
+	}
+}
+
+@media (max-width: 49rem) {
+	h1.home-title {
+		font-size: 1.5em;
+	}
+	
+	.subscribe p.header {
+		font-size: 1.25em;
+		width: 15em;
+	}
+	
+	.main-nav .col-2of12 {
+		width: 20%;
+	}
+}
+
+@media (max-width: 40rem) {
+	.hero .col-5of12 {
+		width: 75%;
+		position: none;
+		left: 12%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 35rem) {
+	.mood-board .col-4of12, .mood-board .col-2of12 , .mood-board .col-3of12, .mood-board .col-6of12   {
+		width: 100%;
+	}
+	
+	.product-endleft, .product-endright, .product {
+		margin: 0 -0.1em 0.5em -0.1em;
+		height: 15em;
+	}
+	
+	.mood-board {
+		height: 123.5em;
+	}
+	
+	.main-nav .col-1of12, .main-nav .col-2of12 {
+		width: 100%;
+	}
+	
+	.hero {
+		padding-top: 5em;
+	}
 }
