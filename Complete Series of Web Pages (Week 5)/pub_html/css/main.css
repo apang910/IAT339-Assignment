@@ -32,6 +32,11 @@ a:visited {
 	
 }
 
+button:active, button:focus {
+	border: none;
+	outline: none;
+}
+
 /* Roboto Font */
 
 @font-face {
@@ -151,26 +156,19 @@ h2.home-sub {
 /* ---------------- MOODBOARD ------------------- */
 
 .mood-board {
-	margin: 0.5em 0 0.5em 0;
-	height: 30.5em;
+	height: auto;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .product {
 	height: 15em;
 	border: 1px solid #000;
-	margin: 0 0.5em 0.5em 0;
 }
 
-.product-endright {
-	height: 15em;
-	border: 1px solid #000;
-	margin: 0 -0.1em 0.5em 0;
-}
-
-.product-endleft{
-	height: 15em;
-	border: 1px solid #000;
-	margin: 0 0.5em 0.5em -0.1em;
+.clear {
+	clear: both;
 }
 
 /* ---------------- SUBSCRIBE ------------------- */
@@ -243,6 +241,30 @@ h2.home-sub {
 
 .button-signup:focus {
 	outline: none;
+}
+
+/* ---------------- MULTI-LISTING PRODUCTS ------------------- */
+
+.filter-tabs {
+	width: 100%;
+	padding: 1em 0 0 0;
+	margin-top: 5em;
+	background-color: #fff;
+}
+
+.filter1, .filter2, .filter3 {
+	font-family: Regular; 
+	font-size: 2em;
+	color: #999;
+	border: none;
+	background-color: #fff;
+	width: 100%;
+}
+
+.active-tab {
+	background-color: #26C6DA;
+	border: none;
+	color: #fff;
 }
 
 /* ---------------- MEDIA QUERIES ------------------- */
