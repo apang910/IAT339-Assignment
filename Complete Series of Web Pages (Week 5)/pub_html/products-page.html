@@ -3,6 +3,8 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+	
 		<title>IAT 339 - Project 02</title>
 		
 		<link href="css/main.css" rel="stylesheet">
@@ -11,13 +13,12 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		
 		<script src="scripts/navigation.js"></script>	 
-		<script src="scripts/products.js"></script>
 		 
 	</head>
 
 	<body>
 		
-		<nav class="main-nav">
+		<nav class="main-nav" id="main-nav">
 			<div class="col-1of12"><a href="index.html">H</a></div>
 			<div class="col-2of12"><a href="products-page.html">Products</a></div>
 			<div class="col-2of12"><a href="about-page.html">About Us</a></div>
@@ -25,85 +26,34 @@
 			<div class="col-2of12"><a href="contact-page.html">Contact Us</a></div>
 		</nav>
 		
-		<header class="filter-tabs">
+		<header class="models">
 			<div class="col-4of12">
-				<button class="filter1">Filter</a>
+				<button class="model">DynaTAC</a>
+				<div class="dynatac-thumbnail"></div>
 			</div>	
 			
 			<div class="col-4of12">
-				<button class="filter2">Filter</a>
+				<button class="model">MicroTAC</a>
+				<div class="microtac-thumbnail"></div>
 			</div>	
 			
 			<div class="col-4of12">
-				<button class="filter3">Filter</a>
+				<button class="model">iDEN</a>
+				<div class="iden-thumbnail"></div>
 			</div>
 
 			<div class="clear"></div>			
 		</header>
-		
-		<div class="products-container">
-			<div class="filter1-products">
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-				
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			</div>
-			
-			<div class="filter2-products">
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-				
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			</div>
-			
-			<div class="filter3-products">
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-				
-				<div class="col-4of12">
-					<div class="product"></div>
-				</div>
-			</div>
+	
+		<div class="info-container">
+			<p class="filter1-info">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. 
+			Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel. Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel.
+			</p>	
 			
 			<div class="clear"></div>
 		</div>
-		
-		<p class="filter1-info">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. 
-		Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel. Lorem ipsum dolor sit amet, 
-		consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel.
-		</p>	
-		
-		<p class="filter2-info">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. 
-		Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel. Lorem ipsum dolor sit amet, 
-		consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel.
-		</p>
-		
-		<p class="filter3-info">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. 
-		Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel. Lorem ipsum dolor sit amet, 
-		consectetur adipiscing elit. Cras at dolor nec elit semper fringilla. Mauris feugiat tellus diam, sit amet ullamcorper lorem semper vel.
-		</p>
 			
 		<footer class="products-footer"> © 2015 Kenny Hong + Alan Pang. All rights reserved </footer>
 		
